@@ -1,0 +1,196 @@
+body{
+  background-image:url('assets/background.jpg');
+}
+		
+img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  margin: 1;
+  padding: 1;
+  box-sizing: border-box;
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'Sour_Gummy';
+  src: url('assets/fonts/SourGummy.ttf') format('truetype');
+}
+
+/* Navigation Bar */
+.navbar {
+  position: float;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Logo and title in nav */
+.navbar .logo-title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.navbar .logo-title:hover .site-title {
+  color: #0077cc;
+  transform: translateY(-2px);
+}
+
+.navbar .logo-title:hover .logo {
+  transform: scale(1.05);
+}
+.navbar .site-title {
+  font-family: 'Sour_Gummy', sans-serif;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 1.4;
+  padding-top: 4px;
+  letter-spacing: 0.05em;
+  color: #523125;
+  margin-left: 15px;
+}
+/* Pages in nav */
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.navbar .nav-links a {
+  font-family: 'Sour_Gummy', sans-serif;
+  font-size: 1.3rem;
+  color: #523125;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0077cc;
+  transition: width 0.3s ease;
+}
+
+/* nav interactive */
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+  color: #0077cc;
+}
+
+.navbar .nav-links a:hover::after {
+  width: 100%;
+}
+
+/* homepage + general */
+.intro-text{
+	font-family: 'Sour_Gummy';
+	color: #523125;
+}
+
+h1{
+	text-align: center;
+}
+
+h3{
+	font-family: 'Sour_Gummy';
+	color: #523125;
+}
+
+
+/* Contact Us Page*/
+.email a:hover,
+.email a.active {
+	color: #0077cc;
+}
+
+.email a {
+	font-family: 'Sour_Gummy', sans-serif;
+	color: #523125;
+}
+
+.form label{
+	font-family: 'Sour_Gummy', sans-serif;
+	color: #523125;
+}
+
+/* About Us page */
+
+.about-image img{
+	float: right;
+	width: 500px;
+	margin: 10px;
+	border:0
+}
+
+/* Gallery */
+
+
+div.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+div.gallery-item{
+	width: 250px;
+	content: "";
+	clear: both;
+	display: inline-table;
+}
+
+div.gallery-item img{
+	width: 100%;
+	height: auto;
+	padding: 15px;
+}
+
+.gallery-item a{
+	text-decoration: none;
+	font-family: 'Sour_Gummy';
+	color: #523125;
+}
+
+div.gallery-item div.desc{
+	text-align:center;
+	padding-bottom: 15px;
+}
+
+.gallery-item a:hover,
+.gallery-item a.active {
+  color: #0077cc;
+}
+
+/* Mixed */
+
+.body-text{
+	font-family: 'Sour_Gummy';
+	color: #523125;
+}
+
+h1{
+	text-align: center;
+}
+
+h3{
+	font-family: 'Sour_Gummy';
+	color: #523125;
+}
+
+.body-image img{
+	float: right;
+	width: 280px;
+	padding:15px;
+	margin: 10px;
+	border:0
+}
